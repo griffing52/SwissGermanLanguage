@@ -1,0 +1,29 @@
+$conversation1
+
+|mier-gond-uf-Italie=we are going to Italy
+|mier=We
+|gond=go
+|uf=to or for
+|Italie=Italy
+
+|mier-hend-luscht=we want to
+|hend=have
+|luscht=desire or lust
+
+|mier-gond-das-wuchenendi-uf-Italie=we are going to Italy this weekend
+|das=this
+|wuchenendi=weekend
+|das-wuchenendi=this weekend
+
+|weil=because
+/use phonetic spelling for foreign words in notes
+#when you use words like 'vile', you verb comes before the subject... CONTINUE
+|mier-gond-uf-Italie-weil-mier-luscht-hend=we are going to Italy because we want to
+|und=and
+|mier-hend-luscht-uf-Pizza-und-SpaghettiBolognese=we want pizza and spaghetti bolognese
+|mier-gond-weil-mier-luscht-hend-uf-Pizza-und-SpaghettiBolognese=we are going because we want pizza and spaghetti bolognese
+|mier-gond-das-wuchenendi-uf-Italie-weil-mier-luscht-hend-uf-Pizza-und-SpaghettiBolognese=We are going to Italy this weekend because we want pizza and spaghetti bolognese
+$conversation1
+
+We are going to Italy this weekend because we want pizza and spaghetti bolognese.
+Mier gönd das wuchenendi uf Italie weil mier luscht hend uf Pizza und Spaghetti Bolognese.
