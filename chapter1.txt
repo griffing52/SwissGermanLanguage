@@ -1,8 +1,10 @@
+START
+#you will learn how to have this conversation with someone! Just listen now, and everything will be explained later! 
 $conversation1
 
 |mier-gond-uf-Italie=we are going to Italy
 |mier=We
-|gond=go
+|mier-gond=we are going
 |uf=to or for
 |Italie=Italy
 
@@ -17,13 +19,87 @@ $conversation1
 
 |weil=because
 /use phonetic spelling for foreign words in notes
-#when you use words like 'vile', you verb comes before the subject... CONTINUE
+#when you use words like 'vile', the main verb comes before the subject... CONTINUE
 |mier-gond-uf-Italie-weil-mier-luscht-hend=we are going to Italy because we want to
+
 |und=and
+|mier-hend-luscht-uf-Pizza=we want pizza
+|Pizza-und-SpaghettiBolognese=Pizza and Spaghetti Bolognese
+
 |mier-hend-luscht-uf-Pizza-und-SpaghettiBolognese=we want pizza and spaghetti bolognese
 |mier-gond-weil-mier-luscht-hend-uf-Pizza-und-SpaghettiBolognese=we are going because we want pizza and spaghetti bolognese
 |mier-gond-das-wuchenendi-uf-Italie-weil-mier-luscht-hend-uf-Pizza-und-SpaghettiBolognese=We are going to Italy this weekend because we want pizza and spaghetti bolognese
-$conversation1
+END
 
-We are going to Italy this weekend because we want pizza and spaghetti bolognese.
+START
+We are leaving
+
+$conversation1
+END
+
+START
+|mier=we
+|fahrid=are leaving
+#conjugation of "fahre," meaning "to leave" or "to drive"
+
+|morn=tomorrow
+#indicates the following day
+
+|am-morge=in the morning
+|am=in the
+#morge=morning
+
+|um=at
+#indicates a specific time
+
+|die-siebeni=around seven
+|die=the
+|siebeni=seven o'clock
+#in Swiss German, "um die" can mean "around" when referring to time
+
+|ap=off
+#used here to indicate the start of a journey
+
+|mier-fahrid-morn-am-morge-um-die-siebeni-ap=we are leaving tomorrow morning at around seven
+
+|und=and
+
+|gond=are going
+#conjugation of "gah," meaning "to go"
+
+|a=to
+#short form of "an" used in Swiss German for destinations
+
+|d'tankstell=the gas station
+#d' = the (short form of "dee" in German)
+
+|mier-gönd-a-d'tankstell=we are going to the gas station
+
+|dass=so that
+#used to indicate purpose or reason
+
+|s'auto=the car
+#s'=the (short form of "das")
+
+|bis=until or to
+#indicates a destination or limit
+
+|uf=to
+#used here to mean reaching a destination
+
+|Italie=Italy
+
+|shafft=manages or makes it
+#verb form of "schaffe," meaning "to accomplish" or "to manage"
+
+|s'auto-shafft-bis-uf-italie=the car can make it to Italy
+|dass-s'auto-bis-uf-italie-shafft=so that the car can make it to Italy
+
+|mier-fahrid-morn-am-morge-um-die-siebeni-ap-und-gönd-a-d'tankstell-dass-s'auto-bis-uf-italie-shafft=we're leaving at around seven in the morning and going to the gas station so the car can make it to Italy
+END
+
 Mier gönd das wuchenendi uf Italie weil mier luscht hend uf Pizza und Spaghetti Bolognese.
+We are going to Italy this weekend because we want pizza and spaghetti bolognese.
+
+Mier fahrid morn am Morge um die siebeni ap und gönd a d’Tankstell dass s’Auto bis uf Italie shafft
+We're leaving at around seven in the morning and going to the gas station so the car can make it to Italy

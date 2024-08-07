@@ -1,6 +1,7 @@
 import random
 from util import mp3FromPhrase, textToSpeech, deleteFilesInFolder, joinAudio
 
+REPITIONS = 5
 
 intros = ["intro1", "intro2", "intro3"]
 # introduction = ["Listen to the way you would say _", "Now, let's learn how to say _", "The way to say _ is", "Listen and repeat the following which means"]
