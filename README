@@ -3,3 +3,4 @@ $ = inject mp3
 | = define word/phrase
 # = inject comment
 / or nothing = ignore line
+* = important phrase
