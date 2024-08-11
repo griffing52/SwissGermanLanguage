@@ -1,7 +1,10 @@
 import random
 from util import mp3FromPhrase, textToSpeech, deleteFilesInFolder, joinAudio
+import random
 
-REPITIONS = 5
+random.seed(0)
+
+OLD_AGE = 100 # difference between time and age after which a word is considered old and has to be repeated
 
 intros = ["intro1", "intro2", "intro3"]
 # introduction = ["Listen to the way you would say _", "Now, let's learn how to say _", "The way to say _ is", "Listen and repeat the following which means"]
