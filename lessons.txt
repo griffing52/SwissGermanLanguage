@@ -1,23 +1,15 @@
-|Ich mues später ässe
-|Und ich gah vielleicht am Strand go fahrrad fahre
-|Was gasch go ässe?
-|Ich sett wisse
-|Du machsch es super
-|Du chasch scho vielles
-|Ich gah jetzt mit minere familie go ässe
-|Ich schriibe dier spöter wieder
-|Ich hoffe diis ässe isch köschtlich
-|Bis spöter
-|Ich han jetzt fertig gässe
-|Was machsch du jetzt?
-|Ich han swiizerdütsch Satze gschrebe
-|Ich gah jetzt de go dusche
-|Ohne mich?
-|Hättisch du hütt luscht und Ziit zum mit mier abmache?
-|Ich möchte dich hütt gseh, wenn hesch du luscht
-|Wenn hesch du deziit?
-|Wenn ich jetzt gah go dusche wär ich am 13:30 barat
-|Ich seh dich bald
-|Ich freue mich
-|Ich dusche scho au gsi
-|Ich han au dusched
+#you will learn how to have this conversation with someone! Just listen now, and everything will be explained later! 
+$conversation1
+|mier gond=we are going
+|mier gond uf Italie=we are going to Italy
+|mier hend luscht=we want to
+|mier gond das wuchenendi uf Italie=we are going to Italy this weekend
+|das wuchenendi=this weekend
+|mier gond uf Italie weil mier luscht hend=we are going to Italy because we want to
+/use phonetic spelling for foreign words in notes
+#when you use words like 'vile', the main verb comes before the subject... CONTINUE
+|mier hend luscht uf Pizza=we want pizza
+|Pizza und SpaghettiBolognese=Pizza and Spaghetti Bolognese
+|mier hend luscht uf Pizza und SpaghettiBolognese=we want pizza and spaghetti bolognese
+|mier gond weil mier luscht hend uf Pizza und SpaghettiBolognese=we are going because we want pizza and spaghetti bolognese
+|mier gond das wuchenendi uf Italie weil mier luscht hend uf Pizza und SpaghettiBolognese=We are going to Italy this weekend because we want pizza and spaghetti bolognese

@@ -1,0 +1,12 @@
+mier=we
+gond=go
+uf=to or for
+Italie=Italy
+hend=have
+luscht=desire or lust
+das=this
+wuchenendi=weekend
+weil=because
+und=and
+Pizza=pizza
+SpaghettiBolognese=spaghetti bolognese

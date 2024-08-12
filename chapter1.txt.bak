@@ -1,28 +1,28 @@
 START
-#you will learn how to have this conversation with someone! Just listen now, and everything will be explained later! 
-$conversation1
 
-|mier-gond-uf-Italie=we are going to Italy
-|mier=We
 |mier-gond=we are going
-|uf=to or for
-|Italie=Italy
-
+|mier-gond-uf-Italie=we are going to Italy
 |mier-hend-luscht=we want to
-|hend=have
-|luscht=desire or lust
-
 |mier-gond-das-wuchenendi-uf-Italie=we are going to Italy this weekend
-|das=this
-|wuchenendi=weekend
 |das-wuchenendi=this weekend
-
-|weil=because
-/use phonetic spelling for foreign words in notes
-#when you use words like 'vile', the main verb comes before the subject... CONTINUE
 |mier-gond-uf-Italie-weil-mier-luscht-hend=we are going to Italy because we want to
 
+|mier=We
+|gond=go
+|uf=to or for
+|Italie=Italy
+|hend=have
+|luscht=desire or lust
+|das=this
+|wuchenendi=weekend
+|weil=because
 |und=and
+|Pizza=pizza
+|SpaghettiBolognese=spaghetti bolognese
+
+/use phonetic spelling for foreign words in notes
+#when you use words like 'vile', the main verb comes before the subject... CONTINUE
+
 |mier-hend-luscht-uf-Pizza=we want pizza
 |Pizza-und-SpaghettiBolognese=Pizza and Spaghetti Bolognese
 
