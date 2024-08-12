@@ -7,6 +7,8 @@ import os
 
 from util import Word, Phrase, Audio
 
+# TODO increase silent time for longer phrases
+
 random.seed(0)
 
 OLD_AGE = 100 # difference between time and age after which a word is considered old and has to be repeated
@@ -16,11 +18,13 @@ intros = ["intro1", "intro2", "intro3"]
 # Listen closely one more time 
 
 # starters = ["How do you say ", "Let's hear you say "]
-starters = ["starter1", "starter2"]
+# starters = ["starter1", "starter2"]
+starters = ["silent_starter1", "silent_starter2"]
 
 
 currDir = 'C:/Users/griff/Documents/Programming/Python/SwissGermanLanguage/'
 audioDir = currDir + "audio/"
+SILENCE = "SILENCE"
 
 def compile(path: str, wordPath: str = "words.txt"):
     wordDict = {}
@@ -149,21 +153,50 @@ def compile(path: str, wordPath: str = "words.txt"):
 
     return chapterName
 
-
 def writeWordAudioSegment(file, audio: Audio, time, preAudio = starters):
     audio.rep += 1
-    write_line(order, f"global/{random.choice(preAudio)}") 
-    write_line(order, audio.getTranslatedAudioFile())
-    write_line(order, audio.getAudioFile())
+    write_line(file, f"global/{random.choice(preAudio)}") 
+    write_line(file, audio.getTranslatedAudioFile())
+    write_line(file, SILENCE)
+    write_line(file, audio.getAudioFile())
     audio.age = time
 
 def build(chapterName):
     with open (f"output/{chapterName}.order", 'r') as file:
+        
+        silent_space = AudioSegment.silent(duration=500)
+
+        i = 0
+
+        lines = file.readlines()
+
+        final = AudioSegment.from_mp3(audioDir + lines[0].replace("\n", ".mp3"))
+        silenceAudio = AudioSegment.from_mp3(audioDir + "global/silence.mp3")
+
+        for line in lines[1:]:
+            if line == "SILENCE\n":
+                
+                final += silenceAudio
+                # final.append(silenceAudio, crossfade=40)
+                continue
+
+            temp = silent_space + AudioSegment.from_mp3(audioDir + line.replace("\n", ".mp3"))
+            
+            final += temp
+            
+            # final.append(temp, crossfade=40)
+
+            if i % 50 == 0:
+                print(i)
+
+
+            i += 1
+
         # get audio segments in order
-        audios = [AudioSegment.from_mp3(audioDir + line.replace("\n", ".mp3")) for line in file.readlines()]
+        # audios = [AudioSegment.from_mp3(audioDir + line.replace("\n", ".mp3")) for line in file.readlines()]
 
         # combine
-        final = reduce(lambda a, b: a.append(AudioSegment.silent(duration=500) + b, crossfade=40), audios)
+        # final = reduce(lambda a, b: a.append(AudioSegment.silent(duration=500) + b, crossfade=40), audios)
     
         # export
         final.export(f"{currDir}output/{chapterName}.mp3", format="mp3")
@@ -175,7 +208,7 @@ def clean():
 def write_line(file, line):
     file.write(line + "\n")
 
-# build(compile("lessons.txt"))
-build("lessons")
+build(compile("lessons.txt"))
+# build("lessons")
 # compile("lessons.txt")
 # clean()
