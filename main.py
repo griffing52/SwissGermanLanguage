@@ -26,14 +26,14 @@ currDir = 'C:/Users/griff/Documents/Programming/Python/SwissGermanLanguage/'
 audioDir = currDir + "audio/"
 SILENCE = "SILENCE"
 
-def compile(path: str, wordPath: str = "words.txt"):
+def compile(path: str, wordPath: str = "input/words.txt"):
     wordDict = {}
     phrases = []
 
     # TODO make sure to increase everytime a word/phase is written
     time = 0
 
-    with open(wordPath, 'r') as wordFile:
+    with open(f"input/{wordPath}", 'r') as wordFile:
         lines = wordFile.readlines()
         for line in lines:
             foreign, english = line.split("=")
@@ -157,7 +157,7 @@ def writeWordAudioSegment(file, audio: Audio, time, preAudio = starters):
     audio.rep += 1
     write_line(file, f"global/{random.choice(preAudio)}") 
     write_line(file, audio.getTranslatedAudioFile())
-    write_line(file, SILENCE)
+    write_line(file, f"{SILENCE}{audio.complexity}")
     write_line(file, audio.getAudioFile())
     audio.age = time
 
