@@ -26,7 +26,7 @@ currDir = 'C:/Users/griff/Documents/Programming/Python/SwissGermanLanguage/'
 audioDir = currDir + "audio/"
 SILENCE = "SILENCE"
 
-def compile(path: str, wordPath: str = "input/words.txt"):
+def compile(path: str, wordPath: str = "words.txt"):
     wordDict = {}
     phrases = []
 
@@ -44,7 +44,7 @@ def compile(path: str, wordPath: str = "input/words.txt"):
 
     chapterName = path.split('.')[0]
     
-    with open(path, 'r') as file:
+    with open(f"input/{path}", 'r') as file:
         lines = file.readlines()
         lineNumber = 0
         # look through each line
@@ -85,7 +85,7 @@ def compile(path: str, wordPath: str = "input/words.txt"):
     with open(f"{currDir}output/{chapterName}.order", 'a') as order:
         for phrase in phrases:
             # inject mp3 and skip the rest if pure audio file (comments and injected mp3s)
-            if (phrase.complexity == 0):
+            if (phrase.complexity == 1):
                 write_line(order, phrase.getAudioFile())
                 continue
             
@@ -149,9 +149,11 @@ def build(chapterName):
         silenceAudio = AudioSegment.from_mp3(audioDir + "global/silence.mp3")
 
         for line in lines[1:]:
-            if line == "SILENCE\n":
-                
-                final += silenceAudio
+            if line[:7] == "SILENCE":
+
+                silenceComplexity = int(line[7:])
+
+                final += AudioSegment.silent(duration=(1000  * silenceComplexity)) # silenceAudio
                 # final.append(silenceAudio, crossfade=40)
                 continue
 

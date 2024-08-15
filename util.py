@@ -10,7 +10,7 @@ audioDir = 'C:/Users/griff/Documents/Programming/Python/SwissGermanLanguage/audi
 class Audio:
     def __init__(self, filename):
         self.filename = filename
-        self.complexity = 0
+        self.complexity = 1
         self.rep = 0 # how many times the word has been repeated
         self.age = 0 # the last time the word was repeated
 
