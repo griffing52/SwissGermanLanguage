@@ -52,7 +52,6 @@ def compile(path: str, wordPath: str = "input/words.txt"):
             # inject mp3
             if (line.startswith('$')):
                 phrases.append(Audio(line[1:-1]))
-                # write_line(order, line[1:-1])
             # define word/phrase
             elif (line.startswith('|')):
                 try:
@@ -67,19 +66,12 @@ def compile(path: str, wordPath: str = "input/words.txt"):
 
                 phraseFileName = phrase.replace(' ','-')
                 # introduce the phrase
-                # write_line(order, f"global/{random.choice(intros)}")  
                 if not os.path.isfile(f"{currDir}audio/generated/translated_{phraseFileName}.mp3"):
                     textToSpeech(translation, f"translated_{phraseFileName}")
 
                 if not os.path.isfile(f"{currDir}audio/generated/{phraseFileName}.mp3"):
                     mp3FromPhrase(phraseFileName)
-                # write_line(order, f"/generated/translate_{phrase}")
-
-                # try:
-                #     phrase.index('-')
-                #     write_line(order, f"generated/{mp3FromPhrase(phrase)}")
-                # except ValueError:
-                #     write_line(order, f"words/{phrase}")
+                
 
                 phrases.append(Phrase(phrase, translation))
                 
@@ -87,7 +79,6 @@ def compile(path: str, wordPath: str = "input/words.txt"):
             elif (line.startswith('#')):
                 textToSpeech(line[1:], f"comment{lineNumber}")
                 phrases.append(Audio(f"generated/comment{lineNumber}"))
-                # write_line(order, f"/generated/comment{lineNumber}")
             
             lineNumber += 1
 
@@ -99,9 +90,6 @@ def compile(path: str, wordPath: str = "input/words.txt"):
                 continue
             
             writeWordAudioSegment(order, phrase, time, intros)
-            # write_line(order, f"global/{random.choice(intros)}")
-            # write_line(order, f"generated/translated_{phrase.getFileName()}")
-            # write_line(order, phrase.getAudioFile())
             time += 1
 
             dependenciesPassed = 0
@@ -130,26 +118,13 @@ def compile(path: str, wordPath: str = "input/words.txt"):
                     if wordDict[word].rep == 0:
                         time += 1
                         writeWordAudioSegment(order, wordDict[word], time, intros)
-                        # wordDict[word].rep += 1
-                        # write_line(order, f"global/{random.choice(intros)}") 
-                        # write_line(order, f"generated/translated_{wordDict[word].getFileName()}")
-                        # write_line(order, wordDict[word].getAudioFile())
 
                     time += 1
                     writeWordAudioSegment(order, wordDict[word], time)
-                    # wordDict[word].rep += 1
-                    # write_line(order, f"global/{random.choice(starters)}") 
-                    # write_line(order, wordDict[word].getTranslatedAudioFile())
-                    # write_line(order, wordDict[word].getAudioFile())
-                    # wordDict[word].age = time
 
 
             time += 1
             writeWordAudioSegment(order, phrase, time)
-            # write_line(order, f"global/{random.choice(starters)}") 
-            # write_line(order, phrase.getTranslatedAudioFile())
-            # write_line(order, phrase.getAudioFile())
-            # phrase.rep += 1
 
     return chapterName
 
@@ -191,12 +166,6 @@ def build(chapterName):
 
 
             i += 1
-
-        # get audio segments in order
-        # audios = [AudioSegment.from_mp3(audioDir + line.replace("\n", ".mp3")) for line in file.readlines()]
-
-        # combine
-        # final = reduce(lambda a, b: a.append(AudioSegment.silent(duration=500) + b, crossfade=40), audios)
     
         # export
         final.export(f"{currDir}output/{chapterName}.mp3", format="mp3")
