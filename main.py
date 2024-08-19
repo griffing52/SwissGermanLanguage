@@ -36,6 +36,9 @@ def compile(path: str, wordPath: str = "words.txt"):
     with open(f"input/{wordPath}", 'r') as wordFile:
         lines = wordFile.readlines()
         for line in lines:
+            if line == "\n":
+                continue
+            
             foreign, english = line.split("=")
             # remove new line
             english = english[:-1]
@@ -179,7 +182,7 @@ def clean():
 def write_line(file, line):
     file.write(line + "\n")
 
-build(compile("lessons.txt"))
-# build("lessons")
+# build(compile("lessons.txt"))
 # compile("lessons.txt")
+# build("lessons")
 # clean()

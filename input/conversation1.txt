@@ -1,0 +1,75 @@
+#Conversation 1: Basic Greetings and Everyday Objects
+grüezi! Wie gahts?
+hoi! Mier gahts guet, danke. Und dir?
+mir au, danke. Du, chasch mir bitte dä Sack gäh? 
+sicher! De Sack isch da. Was hesch dänn dra iipackt?
+nid vil, nur es bitzeli chleider
+END
+
+#Conversation 2: At Home
+bisch scho parat zum choche?
+jä, ich chume grad. Wämer ässe?- do you want to eat/let’s eat
+mier gönd go Znacht ässe. Hesch du de Tisch scho gmacht?
+nei, no nid. ich mach’s grad
+danke! ich bi jetzt grad am Salat mache
+END
+
+#Conversation 3: Asking About Plans
+Chumm gli hei! Mier gönd nacher in d’Badi.
+Mega fein! Aber ich mues no s'Auto hole. - hole=get
+Kein Problem, ich luege öppis zäme bis d’Badi. Wänn chunsch hei?
+In ere Stund. Ich freu mir scho!
+END
+
+#Conversation 4: Expressing Feelings
+Du gsehsch mega hübsch us. -hubsch=good (in terms of looks/like handsome but for girls), usgseh - look  
+Oh, danke vilmal! Du machsch mich glücklich.
+Du bisch de Bescht! Chumm, mier gönd no en Rotwii go gnüsse.
+Das tönt super, ich ha nur es bitzeli Hunger, weil ich voll bi.
+END
+
+#Conversation 5: Family and Holidays
+Was mached ihr am erschte Auguscht?
+Mier gönd mit de Familie uf d’Ferie.
+Oh, wo gönd ihr hi? Ihr = plural you, higah
+Mier gönd mit em Flugzüüg a’s Meer. Freu mi scho!
+Das isch schön! Es schöns Wuchenänd und en schöne Friitig!
+END
+
+#Conversation 6: Daily Routines
+Guete Morge! Hesch guet gschlafe?
+Guet Nacht! Wäck mich mit em Kafi.
+Scho parat! Hesch dä Täsche scho iipackt?
+Jä, alles parat für d’Schuel. Ich vermiss d’Schwiiz immer!
+Ich ha kei Ahnig, was d’Schwiiz so speziell macht!
+END
+
+#Conversation 7: Talking About Work and Free Time
+Was machsch am Samschtig?
+Ich muess schaffe, aber spöter geh ich ins Kino.
+Hesch chöne gnüsse?
+Ja, nach em schaffe es bitzeli Friitig z’ha.
+Schaff nid z’viel! Lüüt mir a, wänn du fertig bisch.
+END
+
+#Conversation 8: Describing Experiences
+Hesch scho emal Schmutzli gseh?
+Nei, nur en Kater, wo en Schmutzli isch.
+Haha, das isch cool! Mached d'Kinder drusse gärn?
+Ja, die luege nur Schoggi und alles farbig!
+Und wot en Scho in Schwiizerdütsch lehre?
+END
+
+#Conversation 9: Making Plans and Socializing
+Chunnsch mit mir go Znacht ässe?
+Gern! Wär ich scho chli am umeluege.
+Ich ha ghöre, dass dä Platz mega fein isch.
+Chum, mier gönd spöter es bitzeli lose.
+END
+
+#Conversation 10: Traveling and Exploring
+Wär wärsch du gärn go reise?
+Ich wür gärn mit em Velo die ganz Schwiiz umerade.
+Das tönt super! Gnüss das Wuche, es hätt so vill Ziit zum Zmittag und Znacht!
+Wär ich in de Ferie nur chli am lüüte und am rede. Gueti Reise!
+END
