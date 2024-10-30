@@ -1,3 +1,5 @@
+# SwissGermanLanguage
+
 The project is designed to assist with learning Swiss German by creating lesson audio files that integrate pronunciation and translations. The program organizes lessons based on complexity and repetition frequency, enhancing the learning experience through gradual exposure and spaced repetition.
 
 ### Key Features
@@ -15,13 +17,23 @@ The project is designed to assist with learning Swiss German by creating lesson 
 -   **mp3 Audio Files**: Used for words and phrases.
 
 
-###Input File Structure
+### Input File Structure
 
-$ = inject mp3
-| = define word/phrase
-# = inject comment
-/ or nothing = ignore line
-* = important phrase
+- $ = inject mp3
+- | = define word/phrase
+- \# = inject comment
+- / or nothing = ignore line
+- \* = important phrase
+
+#### Example
+```bash
+#you will learn how to have this conversation with someone! Just listen now, and everything will be explained later! 
+$conversation1
+|mier gond=we are going
+|mier gond uf Italie=we are going to Italy
+|mier hend luscht=we want to
+|mier gond das wuchenendi uf Italie=we are going to Italy this weekend
+```
 
 Explanation of Core Functions
 -----------------------------
